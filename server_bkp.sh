@@ -4,7 +4,7 @@
 #	  sudo su -l tableau -c "crontab -e"
 #		
 #	  EXAMPLE:
-#		0 0 */3 * * /var/opt/tableau/tableau_server/scripts/tableau-server-backup.bash > /var/log/tableau-server-backup.log
+#		0 0 */3 * * bash /var/opt/tableau/tableau_server/server_bkp.sh > /var/log/tableau-server-backup.log
 ###
 
 ## VARS:
