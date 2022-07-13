@@ -50,7 +50,8 @@ lastest_backup=$(ls -t $bkp_path/*.tsbak | head -n1)
 if [ "$copy_bkp" == "yes" ];
 	then
 	echo $TIMESTAMP "Copying backup and settings to remote location"
-	# Maybe something here to push out to an s3 bucket?
+	# Maybe something here to push out to an s3 bucket? - WIP:
+	aws s3 /$bkp_path/* cp s3://<S3BucketName>
   #
 fi
 
